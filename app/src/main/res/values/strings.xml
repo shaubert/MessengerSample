@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Liftago Simulator Test</string>
+
+    <string name="error_loading">Error loading</string>
+    <string name="tap_to_retry">Tap to retry</string>
+    <string name="retry">Retry</string>
+    <string name="refresh">Refresh</string>
+    <string name="confirm">Confirm</string>
+    <string name="close">Close</string>
+    <string name="open">Open</string>
+    <string name="processing">Processing…</string>
+    <string name="done">Done</string>
+    <string name="empty_list">List is empty</string>
+
+    <string name="simulator_servis_doesnt_exists">Simulator service does not exists on that device</string>
+    <string name="simulator_state_initializing">Initializing</string>
+    <string name="simulator_state_waiting">Waiting</string>
+    <string name="simulator_state_broadcasting">Broadcasting</string>
+    <string name="simulator_state_ride">Ride</string>
+    <string name="simulator_state_unknown">Unknown state</string>
+
+    <string name="start_broadcast_label">Start Broadcast</string>
+
+</resources>

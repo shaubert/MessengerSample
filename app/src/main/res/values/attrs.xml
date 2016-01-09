@@ -1,0 +1,37 @@
+<resources>
+
+    <declare-styleable name="MainTheme">
+        <attr name="suppressToolbar" format="boolean|reference"/>
+
+        <attr name="accent_calm_color" format="color|reference"/>
+        <attr name="accent_calm_bg_color" format="color|reference"/>
+        <attr name="disabled_color" format="color|reference"/>
+        <attr name="selected_item_disabled_color" format="color|reference"/>
+        <attr name="selected_item_pressed_color" format="color|reference"/>
+        <attr name="selected_item_longpressed_color" format="color|reference"/>
+        <attr name="selected_item_focused_color" format="color|reference"/>
+        <attr name="section_color" format="color|reference"/>
+        <attr name="sectionTextAppearance" format="reference"/>
+        <attr name="dividerColor" format="color|reference"/>
+        <attr name="colorAccentDark" format="color|reference"/>
+        <attr name="colorAccentBright" format="color|reference"/>
+
+        <attr name="primaryTextSelector" format="reference"/>
+        <attr name="secondaryTextSelector" format="reference"/>
+        <attr name="primaryTextSelectorInverse" format="reference"/>
+        <attr name="secondaryTextSelectorInverse" format="reference"/>
+        <attr name="selectableColorList" format="reference"/>
+        <attr name="clickableTintList" format="reference"/>
+        <attr name="checkableTintList" format="reference"/>
+
+        <attr name="metStyle" format="reference"/>
+        <attr name="baseButtonStyle" format="reference"/>
+        <attr name="primaryButtonStyle" format="reference"/>
+        <attr name="primaryButtonSmallStyle" format="reference"/>
+        <attr name="secondaryButtonStyle" format="reference"/>
+        <attr name="secondaryButtonSmallStyle" format="reference"/>
+        <attr name="selectableRoundItemBg" format="reference"/>
+        <attr name="checkableListItemBg" format="reference"/>
+    </declare-styleable>    
+
+</resources>

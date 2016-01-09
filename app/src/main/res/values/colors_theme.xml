@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="window_bg_light">#FAFAFA</color>
+    <color name="window_bg_dark">#272727</color>
+
+    <color name="primary">#fed300</color>
+    <color name="primary_800">#F9A825</color>
+    <color name="primary_dark">#FBC02D</color>
+    <color name="primary_light">#FFF9C4</color>
+    <color name="primary_details">#f5f5f5</color>
+    <color name="primary_details_dark">#BDBDBD</color>
+    <color name="action_mode_light">#f5f5f5</color>
+    <color name="action_mode_dark">#555555</color>
+    <color name="accent_calm_light">#737373</color>
+    <color name="accent_calm_dark">#b3b3b3</color>
+    <color name="accent_calm_bg_light">#EEEEEE</color>
+    <color name="accent_calm_bg_dark">#838383</color>
+    <color name="accent_active">#1565C0</color>
+    <color name="accent_active_dark">#0D47A1</color>
+    <color name="accent_active_bright">#BBDEFB</color>
+    <color name="divider_light">#DBDBDB</color>
+    <color name="divider_dark">#4df2f2f2</color>
+    <color name="disabled_light">#21000000</color>
+    <color name="disabled_dark">#31FFFFFF</color>
+    <color name="tab_strip_color_light">@color/accent_active</color>
+    <color name="tab_strip_color_dark">@android:color/white</color>
+    <color name="notification_color">@color/primary</color>
+
+    <color name="selected_item_disabled_color_light">@color/disabled_light</color>
+    <color name="selected_item_pressed_color_light">#20000000</color>
+    <color name="selected_item_longpressed_color_light">@color/accent_active_bright</color>
+    <color name="selected_item_focused_color_light">#99BDBDBD</color>
+
+    <color name="selected_item_disabled_color_dark">@color/disabled_dark</color>
+    <color name="selected_item_pressed_color_dark">#88BDBDBD</color>
+    <color name="selected_item_longpressed_color_dark">@color/accent_active_dark</color>
+    <color name="selected_item_focused_color_dark">#55BDBDBD</color>
+
+    <color name="text_color_primary_dark">#ffffffff</color>
+    <color name="text_color_primary_dark_disabled">#60ffffff</color>
+    <color name="text_color_primary_light">#de000000</color>
+    <color name="text_color_primary_light_disabled">#60000000</color>
+    <color name="text_color_secondary_dark">#b3ffffff</color>
+    <color name="text_color_secondary_dark_disabled">#60ffffff</color>
+    <color name="text_color_secondary_light">#9b9b9b</color>
+    <color name="text_color_secondary_light_disabled">#609b9b9b</color>
+    <color name="text_color_highlight_light">#801565C0</color>
+    <color name="text_color_highlight_dark">#cc1565C0</color>
+    <color name="text_color_hint_light">@color/accent_calm_light</color>
+    <color name="text_color_hint_dark">@color/accent_calm_dark</color>
+    <color name="text_color_link_light">@color/accent_active</color>
+    <color name="text_color_link_dark">@color/accent_active</color>
+
+    <color name="section_color_light">@color/secondary_text_selector_light</color>
+    <color name="section_color_dark">@color/secondary_text_selector_dark</color>
+
+    <color name="progress_color_1">#9C27B0</color>
+    <color name="progress_color_2">#2196F3</color>
+    <color name="progress_color_3">#FF9800</color>
+    <color name="progress_color_4">#F44336</color>
+
+</resources>

@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <string name="thinTextFontFamily" tools:ignore="MissingTranslation">sans-serif-light</string>
+    <string name="mediumTextFontFamily" tools:ignore="MissingTranslation">sans-serif</string>
+
+    <style name="ApiVersionIndependentTheme.Light" parent="@style/Theme.AppCompat.Light">
+        <item name="android:windowBackground">@color/window_bg_light</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="windowNoTitle">true</item>
+
+        <item name="colorPrimary">@color/primary</item>
+        <!-- colorPrimaryDark is used for the status bar -->
+        <item name="colorPrimaryDark">@color/primary_dark</item>
+        <!-- colorAccent is used as the default value for colorControlActivated,
+             which is used to tint widgets -->
+        <item name="colorAccent">@color/accent_active</item>
+        <item name="colorAccentDark">@color/accent_active_dark</item>
+        <item name="colorAccentBright">@color/accent_active_bright</item>
+
+        <item name="android:textColorHighlight">@color/text_color_highlight_light</item>
+        <item name="android:listChoiceBackgroundIndicator">@drawable/selectable_item_background_light</item>
+        <item name="android:listViewStyle">@style/ListViewMainTheme.Light</item>
+        <item name="android:dropDownSpinnerStyle">@style/SpinnerMainTheme.Light</item>
+        <item name="android:activatedBackgroundIndicator">@drawable/activated_background_light</item>
+        <item name="android:selectableItemBackground">@drawable/selectable_item_background_light</item>
+        <item name="android:fastScrollTrackDrawable">@null</item>
+        <item name="android:fastScrollOverlayPosition">atThumb</item>
+
+        <item name="android:textColorPrimary">@color/primary_text_selector_light</item>
+        <item name="android:textColorSecondary">@color/secondary_text_selector_light</item>
+        <item name="android:textColorLink">@color/text_color_link_light</item>
+        <item name="android:textColorHint">@color/text_color_hint_light</item>
+
+        <item name="android:textAppearance">@style/MainThemeTextAppearance</item>
+        <item name="android:textAppearanceSmall">@style/MainThemeSmallTextAppearance</item>
+        <item name="android:textAppearanceMedium">@style/MainThemeMediumTextAppearance</item>
+        <item name="android:textAppearanceLarge">@style/MainThemeLargeTextAppearance</item>
+
+        <item name="windowActionModeOverlay">true</item>
+        <item name="android:windowActionModeOverlay">true</item>
+        <item name="actionModeBackground">@color/action_mode_light</item>
+        <item name="android:actionModeBackground">@color/action_mode_light</item>
+
+        <item name="accent_calm_color">@color/accent_calm_light</item>
+        <item name="accent_calm_bg_color">@color/accent_calm_bg_light</item>
+        <item name="disabled_color">@color/disabled_light</item>
+        <item name="selected_item_disabled_color">@color/selected_item_disabled_color_light</item>
+        <item name="selected_item_pressed_color">@color/selected_item_pressed_color_light</item>
+        <item name="selected_item_longpressed_color">@color/selected_item_longpressed_color_light</item>
+        <item name="selected_item_focused_color">@color/selected_item_focused_color_light</item>
+        <item name="section_color">@color/section_color_light</item>
+        <item name="sectionTextAppearance">@style/SectionTextAppearance</item>
+        <item name="dividerColor">@color/divider_light</item>
+
+        <item name="primaryTextSelector">@color/primary_text_selector_light</item>
+        <item name="secondaryTextSelector">@color/secondary_text_selector_light</item>
+        <item name="primaryTextSelectorInverse">@color/primary_text_selector_dark</item>
+        <item name="secondaryTextSelectorInverse">@color/secondary_text_selector_dark</item>
+        <item name="selectableColorList">@color/selectable_color_list_light</item>
+        <item name="clickableTintList">@color/clickable_icon_tint_list_light</item>
+        <item name="checkableTintList">@color/checkable_icon_tint_list_light</item>
+
+        <item name="metStyle">@style/MaterialEditText</item>
+        <item name="baseButtonStyle">@style/Button</item>
+        <item name="primaryButtonStyle">@style/Button.Primary</item>
+        <item name="primaryButtonSmallStyle">@style/Button.Primary.Small</item>
+        <item name="secondaryButtonStyle">@style/Button.Secondary</item>
+        <item name="secondaryButtonSmallStyle">@style/Button.Secondary.Small</item>
+        <item name="selectableRoundItemBg">@drawable/selectable_round_item_background_light</item>
+        <item name="checkableListItemBg">@drawable/checkable_list_item_bg_light</item>
+
+        <item name="actionBarPopupTheme">@style/ActionBarPopupTheme.Light</item>
+        <item name="actionBarTheme">@style/ActionBarTheme.Light</item>
+
+        <item name="adaptersLibrary_style">@style/AdaptersLibraryStyle</item>
+
+        <item name="stl_slidingTabLayoutStyle">@style/SlidingTabLayoutStyleLight</item>
+    </style>
+
+    <style name="ApiVersionIndependentTheme.Dark" parent="@style/Theme.AppCompat">
+        <item name="android:windowBackground">@color/window_bg_dark</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="windowNoTitle">true</item>
+
+        <item name="colorPrimary">@color/primary</item>
+        <!-- colorPrimaryDark is used for the status bar -->
+        <item name="colorPrimaryDark">@color/primary_dark</item>
+        <!-- colorAccent is used as the default value for colorControlActivated,
+             which is used to tint widgets -->
+        <item name="colorAccent">@color/accent_active</item>
+        <item name="colorAccentDark">@color/accent_active_dark</item>
+        <item name="colorAccentBright">@color/accent_active_bright</item>
+
+        <item name="android:textColorHighlight">@color/text_color_highlight_dark</item>
+        <item name="android:listChoiceBackgroundIndicator">@drawable/selectable_item_background_dark</item>
+        <item name="android:listViewStyle">@style/ListViewMainTheme.Dark</item>
+        <item name="android:dropDownSpinnerStyle">@style/SpinnerMainTheme.Dark</item>
+        <item name="android:activatedBackgroundIndicator">@drawable/activated_background_dark</item>
+        <item name="android:selectableItemBackground">@drawable/selectable_item_background_dark</item>
+        <item name="android:fastScrollTrackDrawable">@null</item>
+        <item name="android:fastScrollOverlayPosition">atThumb</item>
+
+        <item name="android:textColorPrimary">@color/primary_text_selector_dark</item>
+        <item name="android:textColorSecondary">@color/secondary_text_selector_dark</item>
+        <item name="android:textColorLink">@color/text_color_link_dark</item>
+        <item name="android:textColorHint">@color/text_color_hint_dark</item>
+
+        <item name="android:textAppearance">@style/MainThemeTextAppearance</item>
+        <item name="android:textAppearanceSmall">@style/MainThemeSmallTextAppearance</item>
+        <item name="android:textAppearanceMedium">@style/MainThemeMediumTextAppearance</item>
+        <item name="android:textAppearanceLarge">@style/MainThemeLargeTextAppearance</item>
+
+        <item name="windowActionModeOverlay">true</item>
+        <item name="android:windowActionModeOverlay">true</item>
+        <item name="actionModeBackground">@color/action_mode_dark</item>
+        <item name="android:actionModeBackground">@color/action_mode_dark</item>
+
+        <item name="accent_calm_color">@color/accent_calm_dark</item>
+        <item name="accent_calm_bg_color">@color/accent_calm_bg_dark</item>
+        <item name="disabled_color">@color/disabled_dark</item>
+        <item name="selected_item_disabled_color">@color/selected_item_disabled_color_dark</item>
+        <item name="selected_item_pressed_color">@color/selected_item_pressed_color_dark</item>
+        <item name="selected_item_longpressed_color">@color/selected_item_longpressed_color_dark</item>
+        <item name="selected_item_focused_color">@color/selected_item_focused_color_dark</item>
+        <item name="section_color">@color/section_color_dark</item>
+        <item name="sectionTextAppearance">@style/SectionTextAppearance</item>
+        <item name="dividerColor">@color/divider_dark</item>
+
+        <item name="primaryTextSelector">@color/primary_text_selector_dark</item>
+        <item name="secondaryTextSelector">@color/secondary_text_selector_dark</item>
+        <item name="primaryTextSelectorInverse">@color/primary_text_selector_light</item>
+        <item name="secondaryTextSelectorInverse">@color/secondary_text_selector_light</item>
+        <item name="selectableColorList">@color/selectable_color_list_dark</item>
+        <item name="clickableTintList">@color/clickable_icon_tint_list_dark</item>
+        <item name="checkableTintList">@color/checkable_icon_tint_list_dark</item>
+
+        <item name="metStyle">@style/MaterialEditText</item>
+        <item name="baseButtonStyle">@style/Button</item>
+        <item name="primaryButtonStyle">@style/Button.Primary</item>
+        <item name="primaryButtonSmallStyle">@style/Button.Primary.Small</item>
+        <item name="secondaryButtonStyle">@style/Button.Secondary</item>
+        <item name="secondaryButtonSmallStyle">@style/Button.Secondary.Small</item>
+        <item name="selectableRoundItemBg">@drawable/selectable_round_item_background_dark</item>
+        <item name="checkableListItemBg">@drawable/checkable_list_item_bg_dark</item>
+
+        <item name="actionBarPopupTheme">@style/ActionBarPopupTheme.Dark</item>
+        <item name="actionBarTheme">@style/ActionBarTheme.Dark</item>
+
+        <item name="adaptersLibrary_style">@style/AdaptersLibraryStyle</item>
+
+        <item name="stl_slidingTabLayoutStyle">@style/SlidingTabLayoutStyleDark</item>
+    </style>
+
+    <style name="ActionBarPopupTheme.Light" parent="@style/ThemeOverlay.AppCompat.Light">
+        <item name="primaryTextSelector">@color/primary_text_selector_light</item>
+        <item name="secondaryTextSelector">@color/secondary_text_selector_light</item>
+        <item name="primaryTextSelectorInverse">@color/primary_text_selector_dark</item>
+        <item name="secondaryTextSelectorInverse">@color/secondary_text_selector_dark</item>
+        <item name="clickableTintList">@color/clickable_icon_tint_list_light</item>
+        <item name="checkableTintList">@color/checkable_icon_tint_list_light</item>
+    </style>
+
+    <style name="ActionBarPopupTheme.Dark" parent="@style/ThemeOverlay.AppCompat.Dark">
+        <item name="primaryTextSelector">@color/primary_text_selector_dark</item>
+        <item name="secondaryTextSelector">@color/secondary_text_selector_dark</item>
+        <item name="primaryTextSelectorInverse">@color/primary_text_selector_light</item>
+        <item name="secondaryTextSelectorInverse">@color/secondary_text_selector_light</item>
+        <item name="clickableTintList">@color/clickable_icon_tint_list_dark</item>
+        <item name="checkableTintList">@color/checkable_icon_tint_list_dark</item>
+    </style>
+
+    <style name="ActionBarTheme.Light" parent="@style/ThemeOverlay.AppCompat.Light">
+        <item name="stl_slidingTabLayoutStyle">@style/SlidingTabLayoutStyleLight</item>
+
+        <item name="primaryTextSelector">@color/primary_text_selector_light</item>
+        <item name="secondaryTextSelector">@color/secondary_text_selector_light</item>
+        <item name="primaryTextSelectorInverse">@color/primary_text_selector_dark</item>
+        <item name="secondaryTextSelectorInverse">@color/secondary_text_selector_dark</item>
+        <item name="clickableTintList">@color/clickable_icon_tint_list_light</item>
+        <item name="checkableTintList">@color/checkable_icon_tint_list_light</item>
+    </style>
+
+    <style name="ActionBarTheme.Dark" parent="@style/ThemeOverlay.AppCompat.Dark">
+        <item name="stl_slidingTabLayoutStyle">@style/SlidingTabLayoutStyleDark</item>
+
+        <item name="primaryTextSelector">@color/primary_text_selector_dark</item>
+        <item name="secondaryTextSelector">@color/secondary_text_selector_dark</item>
+        <item name="primaryTextSelectorInverse">@color/primary_text_selector_light</item>
+        <item name="secondaryTextSelectorInverse">@color/secondary_text_selector_light</item>
+        <item name="clickableTintList">@color/clickable_icon_tint_list_dark</item>
+        <item name="checkableTintList">@color/checkable_icon_tint_list_dark</item>
+    </style>
+
+    <style name="MainTheme.Light" parent="@style/ApiVersionIndependentTheme.Light">
+        <item name="android:listChoiceBackgroundIndicator">@drawable/selectable_item_background_light</item>
+        <item name="android:activatedBackgroundIndicator">@drawable/activated_background_light</item>
+    </style>
+
+    <style name="MainTheme.Dark" parent="@style/ApiVersionIndependentTheme.Dark">
+        <item name="android:listChoiceBackgroundIndicator">@drawable/selectable_item_background_dark</item>
+        <item name="android:activatedBackgroundIndicator">@drawable/activated_background_dark</item>
+    </style>
+
+    <style name="MainTheme.Light.DarkActionBar">
+        <item name="actionBarPopupTheme">@style/ActionBarPopupTheme.Light</item>
+        <item name="actionBarTheme">@style/ActionBarTheme.Dark</item>
+    </style>
+
+    <style name="MainTheme.Light.TranslucentStatusBar">
+    </style>
+
+    <style name="MainTheme.Light.DarkActionBar.TranslucentStatusBar">
+    </style>
+
+    <style name="MainTheme.Light.NoToolBar">
+        <item name="suppressToolbar">true</item>
+    </style>
+
+    <style name="MainTheme.Dark.NoToolBar">
+        <item name="suppressToolbar">true</item>
+    </style>
+
+    <style name="MainTheme.Light.NoToolBar.TranslucentDecor"/>
+    <style name="MainTheme.Dark.NoToolBar.TranslucentDecor"/>
+
+    <style name="MainTheme.Light.NoToolBar.Transparent">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+
+    <style name="MainTheme.Dark.NoToolBar.Transparent">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+
+    <style name="MainThemeSmallTextAppearance" parent="BaseTextAppearanceSmall">
+        <item name="android:textColor">?secondaryTextSelector</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="MainThemeMediumTextAppearance" parent="BaseTextAppearanceMedium">
+        <item name="android:textColor">?primaryTextSelector</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="MainThemeLargeTextAppearance" parent="BaseTextAppearanceLarge">
+        <item name="android:textColor">?primaryTextSelector</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="MainThemeTextAppearance" parent="BaseTextAppearance">
+        <item name="android:textColor">?secondaryTextSelector</item>
+    </style>
+
+    <style name="BaseListView.Light" parent="@android:style/Widget.Holo.Light.ListView"/>
+    <style name="BaseListView.Dark" parent="@android:style/Widget.Holo.ListView"/>
+    <style name="BaseSpinner.Light" parent="@android:style/Widget.Holo.Light.Spinner"/>
+    <style name="BaseSpinner.Light.Underlined" parent="@android:style/Widget.Holo.Light.Spinner"/>
+    <style name="BaseSeekBar.Light" parent="android:Widget.Holo.Light.SeekBar" />
+    <style name="BaseSpinner.Dark" parent="@android:style/Widget.Holo.Spinner"/>
+    <style name="BaseSpinner.Dark.Underlined" parent="@android:style/Widget.Holo.Spinner"/>
+    <style name="BaseSeekBar.Dark" parent="android:Widget.Holo.SeekBar" />
+    <style name="BaseButton.Light" parent="android:Widget.Holo.Light.Button"/>
+    <style name="BaseButton.Dark" parent="android:Widget.Holo.Button"/>
+    <style name="BaseImageButton.Light" parent="android:Widget.Holo.Light.ImageButton"/>
+    <style name="BaseImageButton.Dark" parent="android:Widget.Holo.ImageButton"/>
+    <style name="BaseDialogTheme.Light" parent="@android:style/Theme.Holo.Light.Dialog"/>
+    <style name="BaseDialogTheme.Dark" parent="@android:style/Theme.Holo.Dialog"/>
+    <style name="BaseHorizontalProgress.Light" parent="@android:style/Widget.Holo.Light.ProgressBar.Horizontal"/>
+    <style name="BaseHorizontalProgress.Dark" parent="@android:style/Widget.Holo.ProgressBar.Horizontal"/>
+    <style name="BaseEditText" parent="@android:style/Widget.Holo.EditText"/>
+
+    <style name="BaseTextAppearance" parent="android:TextAppearance.Holo"/>
+    <style name="BaseTextAppearanceSmall" parent="android:TextAppearance.Holo.Small"/>
+    <style name="BaseTextAppearanceMedium" parent="android:TextAppearance.Holo.Medium"/>
+    <style name="BaseTextAppearanceLarge" parent="android:TextAppearance.Holo.Large"/>
+    <style name="BaseTextAppearanceEditText" parent="android:TextAppearance.Holo.Medium"/>
+
+</resources>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <string name="mediumTextFontFamily" tools:ignore="ExtraTranslation">sans-serif-medium</string>
+
+    <style name="MainTheme.Light" parent="@style/ApiVersionIndependentTheme.Light">
+        <item name="android:windowContentTransitions">true</item>
+        <item name="android:windowAllowEnterTransitionOverlap">true</item>
+        <item name="android:windowAllowReturnTransitionOverlap">true</item>
+        <item name="android:windowSharedElementEnterTransition">@android:transition/move</item>
+        <item name="android:windowSharedElementExitTransition">@android:transition/move</item>
+    </style>
+
+    <style name="MainTheme.Dark" parent="@style/ApiVersionIndependentTheme.Dark">
+        <item name="android:windowContentTransitions">true</item>
+        <item name="android:windowAllowEnterTransitionOverlap">true</item>
+        <item name="android:windowAllowReturnTransitionOverlap">true</item>
+        <item name="android:windowSharedElementEnterTransition">@android:transition/move</item>
+        <item name="android:windowSharedElementExitTransition">@android:transition/move</item>
+    </style>
+
+    <style name="MainTheme.Light.TranslucentStatusBar">
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+    </style>
+
+    <style name="BaseListView.Light" parent="@android:style/Widget.Material.Light.ListView"/>
+    <style name="BaseListView.Dark" parent="@android:style/Widget.Material.ListView"/>
+    <style name="BaseSpinner.Dark" parent="@android:style/Widget.Material.Spinner"/>
+    <style name="BaseSpinner.Dark.Underlined" parent="@android:style/Widget.Material.Spinner.Underlined"/>
+    <style name="BaseSpinner.Light" parent="@android:style/Widget.Material.Light.Spinner"/>
+    <style name="BaseSpinner.Light.Underlined" parent="@android:style/Widget.Material.Light.Spinner.Underlined"/>
+    <style name="BaseSeekBar.Light" parent="android:Widget.Material.Light.SeekBar">
+        <item name="android:splitTrack">false</item>
+    </style>
+    <style name="BaseSeekBar.Dark" parent="android:Widget.Material.SeekBar">
+        <item name="android:splitTrack">false</item>
+    </style>
+    <style name="BaseButton.Light" parent="android:Widget.Material.Light.Button"/>
+    <style name="BaseButton.Dark" parent="android:Widget.Material.Button"/>
+    <style name="BaseImageButton.Light" parent="android:Widget.Material.Light.ImageButton"/>
+    <style name="BaseImageButton.Dark" parent="android:Widget.Material.ImageButton"/>
+    <style name="BaseDialogTheme.Light" parent="@android:style/Theme.Material.Light.Dialog"/>
+    <style name="BaseDialogTheme.Dark" parent="@android:style/Theme.Material.Dialog"/>
+    <style name="BaseHorizontalProgress.Light" parent="@android:style/Widget.Material.Light.ProgressBar.Horizontal"/>
+    <style name="BaseHorizontalProgress.Dark" parent="@android:style/Widget.Material.ProgressBar.Horizontal"/>
+    <style name="BaseEditText" parent="@android:style/Widget.Material.EditText"/>
+
+    <style name="BaseTextAppearance" parent="android:TextAppearance.Material"/>
+    <style name="BaseTextAppearanceSmall" parent="android:TextAppearance.Material.Small"/>
+    <style name="BaseTextAppearanceMedium" parent="android:TextAppearance.Material.Medium"/>
+    <style name="BaseTextAppearanceLarge" parent="android:TextAppearance.Material.Large"/>
+    <style name="BaseTextAppearanceEditText" parent="android:TextAppearance.Material.Medium"/>
+
+</resources>

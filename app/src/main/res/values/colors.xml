@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="simulator_state_initializing">#90caf9</color>
+    <color name="simulator_state_waiting">#9fa8da</color>
+    <color name="simulator_state_broadcasting">#9575cd</color>
+    <color name="simulator_state_ride">#ce93d8</color>
+    <color name="simulator_state_unknown">#ef9a9a</color>
+
+</resources>

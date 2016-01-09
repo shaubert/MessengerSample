@@ -1,0 +1,62 @@
+apply plugin: 'android-sdk-manager'
+apply plugin: 'com.android.application'
+
+repositories {
+    maven { url "https://github.com/shaubert/maven-repo/raw/master/releases" }
+
+    mavenCentral()
+}
+
+dependencies {
+    compile 'com.android.support:support-v4:23.1.1'
+    compile 'com.android.support:appcompat-v7:23.1.1'
+    compile 'com.android.support:design:23.1.1'
+
+    compile 'de.greenrobot:eventbus:2.4.1'
+
+    compile 'com.shaubert.ui.adapters:library:1.2.4'
+    compile 'com.shaubert.ui.dialogs:library:1.0.2'
+    compile 'com.shaubert.ui.slidingtab:library:1.0.3'
+    compile 'com.shaubert.ui.jumper:library:1.0.11'
+    compile 'com.shaubert.ui.remoteimageview:library:1.1.11'
+    compile 'com.shaubert.android-process-button:library:1.2.3'
+
+    provided 'org.projectlombok:lombok:1.16.6'
+    compile 'com.jakewharton:butterknife:7.0.1'
+
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    testCompile 'junit:junit:4.12'
+}
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.2"
+
+    defaultConfig {
+        applicationId "com.shaubert.liftagotask"
+        minSdkVersion 16
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0"
+
+        buildConfigField 'int', 'LOG_LEVEL', '3'
+    }
+
+    buildTypes {
+        release {
+            buildConfigField 'int', 'LOG_LEVEL', '5'
+
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    dexOptions {
+        incremental false
+        javaMaxHeapSize "2g"
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_7
+        targetCompatibility JavaVersion.VERSION_1_7
+    }
+}
