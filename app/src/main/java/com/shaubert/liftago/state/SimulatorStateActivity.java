@@ -51,9 +51,11 @@ public class SimulatorStateActivity extends BaseActivity {
             case WAITING:
                 return new WaitingStateFragment();
 
+            case UNKNOWN:
+                return new UnknownStateFragment();
+
             case BROADCASTING:
             case RIDE:
-            case UNKNOWN:
             default:
                 return new BaseSimulatorStateFragment();
         }
@@ -88,5 +90,4 @@ public class SimulatorStateActivity extends BaseActivity {
             SimulatorConnectionService.disconnect(this);
         }
     }
-
 }

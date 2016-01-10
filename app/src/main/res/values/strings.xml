@@ -20,5 +20,6 @@
     <string name="simulator_state_unknown">Unknown state</string>
 
     <string name="start_broadcast_label">Start Broadcast</string>
+    <string name="refresh_state_label">Refresh State</string>
 
 </resources>

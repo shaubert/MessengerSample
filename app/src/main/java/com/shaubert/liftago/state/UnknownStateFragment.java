@@ -8,9 +8,9 @@ import butterknife.Bind;
 import com.shaubert.liftago.R;
 import com.shaubert.liftago.simulator.SimulatorConnectionService;
 
-public class WaitingStateFragment extends BaseSimulatorStateFragment {
+public class UnknownStateFragment extends BaseSimulatorStateFragment {
 
-    @Bind(R.id.button) TextView startBroadcastButton;
+    @Bind(R.id.button) TextView refreshStateButton;
 
     @Override
     protected int getLayoutResId() {
@@ -21,11 +21,11 @@ public class WaitingStateFragment extends BaseSimulatorStateFragment {
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        startBroadcastButton.setText(R.string.start_broadcast_label);
-        startBroadcastButton.setOnClickListener(new View.OnClickListener() {
+        refreshStateButton.setText(R.string.refresh_state_label);
+        refreshStateButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                SimulatorConnectionService.startBroadcast(getContext());
+                SimulatorConnectionService.refreshState(getContext());
             }
         });
     }

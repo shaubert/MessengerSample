@@ -23,6 +23,7 @@ public class SimulatorConnectionService extends Service {
     public static final String ACTION_EXTRA_NAME = "__action";
     public static final String ACTION_CONNECT = "connect";
     public static final String ACTION_START_BROADCAST = "start_broadcast";
+    public static final String ACTION_REFRESH_STATE = "refresh_state";
     public static final String ACTION_DISCONNECT = "disconnect";
 
     private EventBus bus;
@@ -53,20 +54,24 @@ public class SimulatorConnectionService extends Service {
     };
 
     public static void connect(Context context) {
-        Intent intent = new Intent(context, SimulatorConnectionService.class);
-        intent.putExtra(ACTION_EXTRA_NAME, ACTION_CONNECT);
-        context.startService(intent);
+        startWithAction(context, ACTION_CONNECT);
     }
 
     public static void startBroadcast(Context context) {
-        Intent intent = new Intent(context, SimulatorConnectionService.class);
-        intent.putExtra(ACTION_EXTRA_NAME, ACTION_START_BROADCAST);
-        context.startService(intent);
+        startWithAction(context, ACTION_START_BROADCAST);
+    }
+
+    public static void refreshState(Context context) {
+        startWithAction(context, ACTION_REFRESH_STATE);
     }
 
     public static void disconnect(Context context) {
+        startWithAction(context, ACTION_DISCONNECT);
+    }
+
+    private static void startWithAction(Context context, String action) {
         Intent intent = new Intent(context, SimulatorConnectionService.class);
-        intent.putExtra(ACTION_EXTRA_NAME, ACTION_DISCONNECT);
+        intent.putExtra(ACTION_EXTRA_NAME, action);
         context.startService(intent);
     }
 
@@ -104,6 +109,10 @@ public class SimulatorConnectionService extends Service {
 
             case ACTION_START_BROADCAST:
                 startBroadcast();
+                break;
+
+            case ACTION_REFRESH_STATE:
+                refreshState();
                 break;
 
             case ACTION_DISCONNECT:
@@ -164,6 +173,15 @@ public class SimulatorConnectionService extends Service {
         }
 
         simulatorConnection.sendOnBroadcastMessage();
+    }
+
+    private void refreshState() {
+        if (state != ConnectorState.CONNECTED
+                || simulatorConnection == null) {
+            return;
+        }
+
+        simulatorConnection.refreshState();
     }
 
     private void onConnected(ComponentName className, IBinder service) {
