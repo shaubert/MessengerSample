@@ -88,6 +88,10 @@ public class SimulatorConnection implements Handler.Callback {
             case Messages.MSG_IN_ON_RIDE_FINISH:
                 handleRideFinish();
                 break;
+
+            default:
+                refreshState();
+                break;
         }
         return false;
     }
